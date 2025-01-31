@@ -19,7 +19,7 @@ def generate_random_dates(start_date: datetime, end_date: datetime):
     current = start_date
     all_dates = []
     while current <= end_date:
-        commits_today = random.randint(1, 6)
+        commits_today = random.randint(0, 6)
         for _ in range(commits_today):
             random_time = timedelta(
                 hours=random.randint(0, 23),
